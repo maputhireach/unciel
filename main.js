@@ -234,3 +234,8 @@ function toggleMenu() {
 
 // Add event listener to the hamburger icon
 document.getElementById("hamburger").addEventListener("click", toggleMenu);
+
+// Toggle navigation menu
+document.getElementById("hamburger").addEventListener("click", function () {
+  document.getElementById("nav-menu").classList.toggle("active");
+});

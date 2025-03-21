@@ -6,6 +6,12 @@ body {
   color: #333;
   background-color: #f9f9f9;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
 h1,
 h2,
@@ -22,49 +28,41 @@ a {
 /* Header */
 /* General Header Styles */
 header {
-  background-color: #222; /* Dark background */
-  color: #fff; /* White text */
-  padding: 10px 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background: #333;
+  color: white;
+  padding: 15px;
+  width: 100%;
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .header-left {
   display: flex;
   align-items: center;
-  gap: 20px; /* Space between logo and hamburger */
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #fff; /* White text */
+  margin-right: 20px;
 }
-
 .logo:hover {
   color: #ffffff; /* Vibrant hover color */
 }
 
 .nav-menu ul {
-  display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 20px; /* Space between nav items */
+  display: flex;
 }
 
 .nav-menu ul li a {
-  color: #fff; /* White text */
   text-decoration: none;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  color: white;
+  font-size: 1rem;
 }
 
 .nav-menu ul li a:hover {
@@ -74,28 +72,24 @@ header {
 /* Search Bar */
 .search-bar {
   display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 25px;
-  padding: 8px 16px;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .search-bar input {
   border: none;
-  outline: none;
-  font-size: 14px;
-  padding: 5px;
-  width: 180px;
   background: transparent;
+  color: white;
+  outline: none;
+  padding: 5px;
 }
 
 .search-bar button {
-  background: none;
+  background: transparent;
   border: none;
+  color: white;
   cursor: pointer;
-  font-size: 16px;
-  color: #222;
-  transition: color 0.3s ease;
 }
 
 .search-bar button:hover {
@@ -361,14 +355,14 @@ footer {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 20px; /* Space between search bar and cart icon */
 }
+
 .cart-icon {
+  margin-left: 15px;
+  font-size: 1.5rem;
   position: relative;
-  font-size: 24px;
-  color: #fdfdfd;
-  transition: transform 0.3s ease, color 0.3s ease;
 }
+
 .close-cart {
   background: none;
   border: none;
@@ -383,17 +377,13 @@ footer {
 
 .cart-notification {
   position: absolute;
-  top: -8px;
-  right: -8px;
-  background: #ff1500; /* Vibrant notification color */
-  color: #ffffff;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: white;
   font-size: 12px;
-  font-weight: 600;
-  padding: 4px 8px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 2px 6px;
 }
 
 /* Cart Section */
@@ -401,11 +391,11 @@ footer {
 #cart {
   position: fixed;
   top: 0;
-  right: -400px; /* Fully hidden off-screen */
+  right: -500px; /* Fully hidden off-screen */
   width: 300px; /* Ensure this matches the width */
   height: 100vh;
-  background-color: #949494;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  box-shadow: -2px 0 10px rgba(109, 107, 107, 0.1);
   padding: 20px;
   overflow-y: auto;
   z-index: 1000;
@@ -875,75 +865,42 @@ footer {
 /* Hamburger Icon */
 /* Hamburger Icon */
 .hamburger {
-  display: none; /* Hidden by default */
-  font-size: 24px;
+  display: none;
+  font-size: 1.5rem;
   cursor: pointer;
-  margin-right: 30px;
-  color: #fff;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-  /* Adjust header layout for small screens */
-  .header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px; /* Add padding for better spacing */
+  .hamburger {
+    display: block;
   }
 
-  .header-left {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Space between logo and hamburger */
-  }
-
-  .header-right {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Space between search bar and cart icon */
-  }
-
-  /* Hide the regular nav menu */
   .nav-menu {
     display: none;
+    flex-direction: column;
     position: absolute;
-    top: 60px; /* Adjust based on header height */
+    top: 60px;
     left: 0;
+    background: #444;
     width: 100%;
-    background-color: #333; /* Dark background */
-    z-index: 1000;
+    padding: 10px 0;
   }
 
   .nav-menu.active {
-    display: block; /* Show the menu when active */
+    display: flex;
   }
 
   .nav-menu ul {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
 
   .nav-menu ul li {
     margin: 10px 0;
   }
 
-  .nav-menu ul li a {
-    color: #fff; /* White text */
-    font-size: 18px;
-  }
-
-  /* Show the hamburger icon */
-  .hamburger {
-    display: block;
-  }
-
-  /* Adjust search bar and cart icon for small screens */
-  .search-bar {
-    margin-right: 10px; /* Space between search bar and cart icon */
-  }
-
-  .cart-icon {
-    margin-right: 10px; /* Space between cart icon and edge */
+  .search-bar input {
+    width: 80px;
   }
 }
