@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNCIELBRAND</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="preload"
+      href="image/photo_10_2025-03-18_23-47-02.jpg"
+      as="image"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="header-top">
+        <div class="header-left">
+          <div class="logo">UNCIEL BRANDS</div>
+          <!-- Hamburger Icon -->
+          <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+          <nav class="nav-menu" id="nav-menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#products">Shop</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-right">
+          <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+            <button><i class="fas fa-search"></i></button>
+          </div>
+          <div class="cart-icon">
+            <a href="javascript:void(0)" onclick="toggleCart()">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-notification" id="cart-notification">0</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="banner-container">
+        <div
+          class="banner-slide"
+          style="
+            background-image: url('image/photo_10_2025-03-18_23-47-02.jpg');
+          "
+        >
+          <div class="hero-content">
+            <h1>ELEVATE YOUR STYLE</h1>
+            <p>Premium clothing for the modern individual.</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+          </div>
+        </div>
+        <div
+          class="banner-slide"
+          style="background-image: url('image/photo_1_2025-03-18_23-47-02.jpg')"
+        >
+          <div class="hero-content">
+            <h1>NEW COLLECTION</h1>
+            <p>Discover the latest trends in fashion.</p>
+            <a href="#products" class="cta-button">Explore Now</a>
+          </div>
+        </div>
+        <div
+          class="banner-slide"
+          style="background-image: url('image/photo_3_2025-03-18_23-47-02.jpg')"
+        >
+          <div class="hero-content">
+            <h1>LIMITED EDITION</h1>
+            <p>Exclusive designs for a unique look.</p>
+            <a href="#products" class="cta-button">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+      <h2 align="center">Our Available Collection</h2>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Product 1 -->
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img
+                src="image/photo_4_2025-03-18_23-47-02.jpg"
+                alt="Urban Hoodie"
+              />
+              <h3>Urban Hoodie</h3>
+              <p>$49.99</p>
+              <button onclick="addToCart('Urban Hoodie', 49.99)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img
+                src="image/photo_4_2025-03-18_23-47-02.jpg"
+                alt="Urban Hoodie"
+              />
+              <h3>Urban Hoodie</h3>
+              <p>$49.99</p>
+              <button onclick="addToCart('Urban Hoodie', 49.99)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img
+                src="image/photo_4_2025-03-18_23-47-02.jpg"
+                alt="Urban Hoodie"
+              />
+              <h3>Urban Hoodie</h3>
+              <p>$49.99</p>
+              <button onclick="addToCart('Urban Hoodie', 49.99)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img
+                src="image/photo_4_2025-03-18_23-47-02.jpg"
+                alt="Urban Hoodie"
+              />
+              <h3>Urban Hoodie</h3>
+              <p>$49.99</p>
+              <button onclick="addToCart('Urban Hoodie', 49.99)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img
+                src="image/photo_4_2025-03-18_23-47-02.jpg"
+                alt="Urban Hoodie"
+              />
+              <h3>Urban Hoodie</h3>
+              <p>$49.99</p>
+              <button onclick="addToCart('Urban Hoodie', 49.99)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-card">
+              <img
+                src="image/photo_4_2025-03-18_23-47-02.jpg"
+                alt="Urban Hoodie"
+              />
+              <h3>Urban Hoodie</h3>
+              <p>$49.99</p>
+              <button onclick="addToCart('Urban Hoodie', 49.99)">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <!-- Repeat for other products -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <button class="close-cart" onclick="toggleCart()">&times;</button>
+      </div>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="total">0.00</span></p>
+      <div class="promo-code-section">
+        <input type="text" id="promo-code" placeholder="Enter promo code" />
+        <button onclick="applyPromoCode()" class="cta-button">Apply</button>
+      </div>
+      <button
+        onclick="removeAllItems()"
+        class="cta-button remove-all"
+        style="display: none"
+      >
+        Remove All
+      </button>
+      <button onclick="openCheckout()" class="cta-button">
+        Proceed to Checkout
+      </button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <p>
+            We are a modern clothing brand dedicated to providing high-quality
+            apparel.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>UNCIELBRAND@gmail.com</p>
+          <p>Phone: +855 608560</p>
+        </div>
+        <div class="footer-section">
+          <h3>Sign Up for Updates</h3>
+          <form id="signup-form">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your Gmail"
+              required
+            />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-media-links">
+            <a
+              href="https://discord.gg/qdcjXAZy"
+              target="_blank"
+              aria-label="Discord"
+            >
+              <i class="fab fa-discord"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/@mareachh"
+              target="_blank"
+              aria-label="YouTube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/mareach__/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.facebook.com/maa.reachz.3"
+              target="_blank"
+              aria-label="Facebook"
+            >
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 UNCIELBRAND. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
