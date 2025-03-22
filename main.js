@@ -226,16 +226,16 @@ function calculateTotal() {
   return total;
 }
 
-// Function to toggle the menu visibility
-function toggleMenu() {
-  const navMenu = document.getElementById("nav-menu");
-  navMenu.classList.toggle("active");
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector("#hamburger");
+  const navMenu = document.querySelector("#nav-menu");
 
-// Add event listener to the hamburger icon
-document.getElementById("hamburger").addEventListener("click", toggleMenu);
+  hamburger.addEventListener("click", function () {
+    console.log("Hamburger clicked!"); // Debugging: Check if the event fires
+    navMenu.classList.toggle("active");
+  });
+});
 
-// Toggle navigation menu
-document.getElementById("hamburger").addEventListener("click", function () {
-  document.getElementById("nav-menu").classList.toggle("active");
+document.addEventListener("DOMContentLoaded", function () {
+  console.log("Script loaded!"); // Check if this appears in the console
 });
