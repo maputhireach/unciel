@@ -113,7 +113,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <img
-                src="image/photo_4_2025-03-18_23-47-02.jpg"
+                src="image/photo_3_2025-03-18_23-47-02.jpg"
                 alt="Urban Hoodie"
               />
               <h3>Urban Hoodie</h3>
@@ -126,7 +126,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <img
-                src="image/photo_4_2025-03-18_23-47-02.jpg"
+                src="image/photo_2_2025-03-18_23-47-02.jpg"
                 alt="Urban Hoodie"
               />
               <h3>Urban Hoodie</h3>
@@ -139,7 +139,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <img
-                src="image/photo_4_2025-03-18_23-47-02.jpg"
+                src="image/photo_5_2025-03-18_23-47-02.jpg"
                 alt="Urban Hoodie"
               />
               <h3>Urban Hoodie</h3>
@@ -152,7 +152,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <img
-                src="image/photo_4_2025-03-18_23-47-02.jpg"
+                src="image/photo_8_2025-03-18_23-47-02.jpg"
                 alt="Urban Hoodie"
               />
               <h3>Urban Hoodie</h3>
@@ -165,7 +165,7 @@
           <div class="swiper-slide">
             <div class="product-card">
               <img
-                src="image/photo_4_2025-03-18_23-47-02.jpg"
+                src="image/photo_7_2025-03-18_23-47-02.jpg"
                 alt="Urban Hoodie"
               />
               <h3>Urban Hoodie</h3>
@@ -199,9 +199,36 @@
       >
         Remove All
       </button>
-      <button onclick="openCheckout()" class="cta-button">
+      <button onclick="openCheckoutModal()" class="proceed-button">
+        <i class="fas fa-shopping-cart"></i>
+        <!-- Optional icon -->
         Proceed to Checkout
       </button>
+
+      <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal" onclick="closeCheckoutModal()"
+            >&times;</span
+          >
+          <h2>Checkout</h2>
+          <form id="checkout-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="payment">Payment Option:</label>
+            <select id="payment" name="payment" required>
+              <option value="credit-card">Credit Card</option>
+              <option value="paypal">PayPal</option>
+              <option value="bank-transfer">KHQR CODE</option>
+            </select>
+
+            <button type="submit" class="cta-button">Complete Purchase</button>
+          </form>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
@@ -228,19 +255,7 @@
           <p>UNCIELBRAND@gmail.com</p>
           <p>Phone: +855 608560</p>
         </div>
-        <div class="footer-section">
-          <h3>Sign Up for Updates</h3>
-          <form id="signup-form">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Enter your Gmail"
-              required
-            />
-            <button type="submit">Subscribe</button>
-          </form>
-        </div>
+
         <div class="footer-section">
           <h3>Follow Us</h3>
           <div class="social-media-links">

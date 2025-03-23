@@ -227,15 +227,26 @@ function calculateTotal() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const hamburger = document.querySelector("#hamburger");
-  const navMenu = document.querySelector("#nav-menu");
-
-  hamburger.addEventListener("click", function () {
-    console.log("Hamburger clicked!"); // Debugging: Check if the event fires
-    navMenu.classList.toggle("active");
-  });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   console.log("Script loaded!"); // Check if this appears in the console
 });
+
+function openCheckoutModal() {
+  const modal = document.getElementById("checkout-modal");
+  modal.style.display = "flex";
+}
+
+function closeCheckoutModal() {
+  const modal = document.getElementById("checkout-modal");
+  modal.style.display = "none";
+}
+
+const checkoutForm = document.getElementById("checkout-form");
+if (checkoutForm) {
+  checkoutForm.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent form submission
+    alert("Form submitted successfully!");
+    closeCheckoutModal();
+  });
+} else {
+  console.error("Checkout form not found!");
+}
